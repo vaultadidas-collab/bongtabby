@@ -1,29 +1,29 @@
-:root{--ink:#2b211c;--brown:#6b4632;--cream:#fff8f1;--sand:#f3e6d8;--red:#c4452d;--line:#eadfce}
+:root{--ink:#2b211c;--brown:#6b4632;--cream:#fff8f1;--line:#eadfce}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:var(--cream);line-height:1.6}
 a{color:var(--brown)}img{max-width:100%;display:block}
 .wrap{width:min(1080px,92%);margin:auto}
 header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:5}
-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
-nav a{text-decoration:none;font-family:system-ui,sans-serif;font-size:15px;margin-left:14px}
-.logo{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;color:var(--ink)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;flex-wrap:wrap}
+nav a{text-decoration:none;font-family:system-ui,sans-serif;font-size:15px;margin-left:12px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;color:var(--ink);margin-left:0}
 .logo img{width:46px;height:46px;border-radius:50%;object-fit:cover}
-.btn{display:inline-block;background:#ee4d2d;color:#fff;text-decoration:none;padding:12px 18px;border-radius:8px;font-family:system-ui,sans-serif;font-weight:700}
+.btn{display:inline-block;background:#ee4d2d;color:#fff;text-decoration:none;padding:12px 18px;border-radius:8px;font-family:system-ui,sans-serif;font-weight:700;margin-top:8px}
 .btn.ghost{background:#fff;color:#ee4d2d;border:1px solid #ee4d2d;margin-left:8px}
 .buybar{position:sticky;bottom:0;background:#fff;border-top:1px solid var(--line);padding:10px 0;z-index:6}
-.buybar .wrap{display:flex;gap:8px;align-items:center;justify-content:space-between}
-.card .btn{margin-top:8px}
+.buybar .wrap{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:36px 0}
 .hero h1{font-size:42px;line-height:1.15;margin:0 0 12px}
+.hero img{width:100%;height:360px;object-fit:cover;border-radius:16px}
 .note{font-size:14px;color:#6d5b4e}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
-.card img{height:220px;width:100%;object-fit:cover}
+.card img{height:220px;width:100%;object-fit:cover;background:#f6efe6}
 .card div{padding:14px}
-.card h2,.card h3{margin:0 0 8px;font-size:20px}
-.price{color:var(--red);font-family:system-ui,sans-serif;font-weight:700}
+.card h3{margin:0 0 8px;font-size:20px}
+.price{color:#ee4d2d;font-family:system-ui,sans-serif;font-weight:700}
 section{padding:28px 0}
-footer{background:var(--brown);color:#f6eadf;padding:28px 0;font-family:system-ui,sans-serif;font-size:14px}
+footer{background:#6b4632;color:#f6eadf;padding:28px 0 88px;font-family:system-ui,sans-serif;font-size:14px}
 footer a{color:#fff}
-.blog article{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;margin:16px 0}
-@media(max-width:800px){.hero,.grid{grid-template-columns:1fr}.hero h1{font-size:32px}nav{flex-wrap:wrap}}
+.blog article,.blog{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;margin:16px 0}
+@media(max-width:800px){.hero,.grid{grid-template-columns:1fr}.hero h1{font-size:30px}.hero img{height:240px}.btn.ghost{margin-left:0}}
