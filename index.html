@@ -3,11 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bông Tabyy | Pate và hạt cho mèo 2–3 tháng</title>
-<meta name="description" content="Bông Tabyy là mèo mướp 2–3 tháng. Shop giới thiệu pate gói 70g, lon 400g và hạt Mr.Vet, đặt qua Shopee. Link có hoa hồng. Không phải cửa hàng chính hãng.">
+<title>Bông Tabyy | Pate mèo khung giờ vàng Shopee | Mèo mớp 2–3 tháng</title>
+<meta name="description" content="Bông Tabyy, mèo mớp nhà nuôi thật. Pate 70g, lon, hạt, cát Unicharm. Mua khung giờ vàng Shopee tối 20h–22h, link có hoa hồng. Không phải shop chính hãng.">
+<meta name="keywords" content="pate mèo, khung giờ vàng shopee, mèo 2 tháng ăn gì, Bông Tabyy, Mr.Vet, cát Unicharm">
 <link rel="canonical" href="https://vaultadidas-collab.github.io/bongtabby/">
-<meta property="og:title" content="Bông Tabyy, đồ ăn mèo nhà nuôi thử">
-<meta property="og:description" content="Pate gói, pate lon, hạt cho mèo 2–3 tháng. Mua món nhỏ trước.">
+<meta property="og:title" content="Bông Tabyy | Pate mèo khung giờ vàng">
+<meta property="og:description" content="Nhà nuôi 3 bé. Mua pate gói 70g khung 20h–22h. Link Shopee có hoa hồng.">
 <meta property="og:image" content="https://vaultadidas-collab.github.io/bongtabby/bia-bong-that.jpg">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="vi_VN">
@@ -15,7 +16,7 @@
 </head>
 <body>
 <header><div class="wrap"><nav>
-<a class="logo" href="index.html"><img src="logo-bongtabyy.jpg" alt="Mặt Bông Tabyy">Bông Tabyy</a>
+<a class="logo" href="index.html"><img class="logo-float" src="logo-bongtabyy.jpg" alt="Mặt Bông Tabyy">Bông Tabyy</a>
 <div>
 <a href="san-pham.html">Sản phẩm</a>
 <a href="chuyen-nha.html">Chuyện nhà</a>
@@ -27,12 +28,21 @@
 <section class="hero">
 <div>
 <p class="note">Nhà đang nuôi 3 bé. Bé lớn nhất, Bông, đang 2–3 tháng. Link Shopee có hoa hồng.</p>
-<h1>Đồ ăn mèo tao cho Bông ăn, rồi mới dám đưa link.</h1>
-<p>Không phải shop chính hãng Mr.Vet. Tao bán pate gói, pate lon và hạt. Khách mới thì mua gói 70g hoặc lon 400g. Túi 5kg để khi bé đã ăn quen.</p>
-<a class="btn" href="https://s.shopee.vn/AAHlXG3OKk" rel="sponsored noopener" target="_blank">Mua pate trên Shopee</a>
+<h1>Bông ăn gì, tao đưa link đó.</h1>
+<p>Không phải shop chính hãng. Khách mới mua gói 70g. Lon và hạt để khi bé ăn quen.</p>
+<div class="timebox">
+<span id="clock">--:--:--</span>
+<span id="golden" class="golden-off">Đang kiểm tra khung giờ</span>
+</div>
+<a class="btn" href="https://s.shopee.vn/AAHlXG3OKk" rel="sponsored noopener" target="_blank">Mua pate 70g ngay</a>
 <a class="btn ghost" href="san-pham.html">Xem hết món</a>
 </div>
-<img src="bia-bong-that.jpg" alt="Bông Tabyy nằm trong thùng, tai cụp, lông mướp">
+<img class="hero-float" src="bia-bong-that.jpg" alt="Bông Tabyy nằm trong thùng, tai cụp, lông mướp">
+</section>
+<section>
+<h2>Khung giờ vàng Shopee</h2>
+<p>Nhiều người mua đồ mèo từ 20:00 đến 22:00. Flash sale thường chạy khung này. Bấm link khi đang trong khung để dễ thấy giá tốt hơn.</p>
+<p class="note">Giờ hiện tại là giờ Việt Nam. Trang tự đổi màu khi vào khung vàng.</p>
 </section>
 <section>
 <h2>Ba món nên mở trước</h2>
@@ -58,6 +68,34 @@
 <footer><div class="wrap">
 <p>Bông Tabyy giới thiệu hàng. Link sang Shopee là link tiếp thị, shop có hoa hồng nếu bạn mua. Không phải cửa hàng chính thức. Đồ ăn không thay khám bệnh.</p>
 </div></footer>
-<div class="buybar"><div class="wrap"><span>Mua trực tiếp trên Shopee</span><a class="btn" href="https://s.shopee.vn/AAHlXG3OKk" rel="sponsored noopener" target="_blank">Mua pate 70g</a></div></div>
+<div class="buybar"><div class="wrap"><span id="buybar-time">Mua trực tiếp trên Shopee</span><a class="btn" href="https://s.shopee.vn/AAHlXG3OKk" rel="sponsored noopener" target="_blank">Mua pate 70g</a></div></div>
+<script>
+function updateClock(){
+  const now = new Date();
+  const vn = new Date(now.toLocaleString('en-US',{timeZone:'Asia/Ho_Chi_Minh'}));
+  const h = vn.getHours().toString().padStart(2,'0');
+  const m = vn.getMinutes().toString().padStart(2,'0');
+  const s = vn.getSeconds().toString().padStart(2,'0');
+  document.getElementById('clock').textContent = h+':'+m+':'+s;
+  const hour = vn.getHours();
+  const golden = document.getElementById('golden');
+  const buybar = document.getElementById('buybar-time');
+  if(hour>=20 && hour<22){
+    golden.textContent = 'Khung giờ vàng Shopee đang mở';
+    golden.className = 'golden-on';
+    buybar.textContent = 'Khung vàng 20h–22h — bấm mua';
+  } else if(hour>=12 && hour<13){
+    golden.textContent = 'Khung trưa, cũng có deal';
+    golden.className = 'golden-on';
+    buybar.textContent = 'Khung trưa — xem giá';
+  } else {
+    golden.textContent = 'Chưa đến khung vàng (20h–22h)';
+    golden.className = 'golden-off';
+    buybar.textContent = 'Mua trực tiếp trên Shopee';
+  }
+}
+setInterval(updateClock,1000);
+updateClock();
+</script>
 </body>
 </html>
